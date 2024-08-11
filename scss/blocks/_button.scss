@@ -18,4 +18,12 @@
             background-color: #faff00;
         }
     }
+    &_green {
+        padding: 6.388vw;
+        background-color: #3a9f1e;
+        color: #fff;
+        &:hover {
+            background-color: rgba(#3a9f1e, 0.7);
+        }
+    }
 }

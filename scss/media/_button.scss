@@ -1,0 +1,12 @@
+@media (max-width: 992px) {
+    .button {
+        border-radius: 2.777vw;
+        font-size: 5.555vw;
+        &_white {
+            padding: 5.277vw;
+        }
+        &_green {
+            padding: 3.055vw;
+        }
+    }
+}
