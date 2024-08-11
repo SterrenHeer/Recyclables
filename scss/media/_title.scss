@@ -1,0 +1,32 @@
+@media (max-width: 992px) {
+    .title {
+        font-size: 4.444vw; //16px
+        &_15 {
+            font-size: 2.777vw;
+        }
+        &_16 {
+            font-size: 3.888vw;
+        }
+        &_20 {
+            font-size: 4.444vw;
+        }
+        &_32 {
+            font-size: 1.666vw;
+        }
+        &_36 {
+            font-size: 4.444vw;
+        }
+        &_40 {
+            font-size: 5.555vw;
+        }
+        &_48 {
+            font-size: 6.666vw;
+        }
+        &_64 {
+            font-size: 6.666vw;
+        }
+        &_96 {
+            font-size: 6.666vw;
+        }
+    }
+}

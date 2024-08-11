@@ -1,3 +1,36 @@
+.title {
+	font-weight: 600;
+	font-size: 1.25vw; //24px
+	color: #000;
+	&_15 {
+		font-size: 0.781vw;
+	}
+	&_16 {
+		font-size: 0.833vw;
+	}
+	&_20 {
+		font-size: 1.041vw;
+	}
+	&_32 {
+		font-size: 1.666vw;
+	}
+	&_36 {
+		font-size: 1.875vw;
+	}
+	&_40 {
+		font-size: 2.083vw;
+	}
+	&_48 {
+		font-size: 2.5vw;
+	}
+	&_64 {
+		font-size: 3.333vw;
+	}
+	&_96 {
+		font-size: 5vw;
+	}
+}
+
 .light {
 	font-weight: 300;
 }
@@ -21,6 +54,9 @@
 }
 .under {
 	text-decoration: underline;
+}
+.green {
+	color: #0E6E34;
 }
 
 .lato {
