@@ -1,0 +1,87 @@
+.header {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    background: #0e6e34;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: self-start;
+        padding: 0.212vw 0;
+        .title {
+            color: #fff;
+        }
+    }
+    &_logo {
+        display: flex;
+        align-items: center;
+        img {
+            width: 4.166vw;
+            height: 6.302vw;
+        }
+    }
+    &_center {
+        display: flex;
+        gap: 4.739vw;
+        margin: 0.885vw 0 0.468vw;
+    }
+    &_menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1.927vw;
+        width: 40.208vw;
+        &_top, &_bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+        &_top {
+            align-items: self-end;
+        }
+        &_map {
+            display: flex;
+            gap: 0.572vw;
+            img {
+                width: 1.041vw;
+            }
+            .title {
+                color: #faff00;
+            }
+        }
+        &_entities {
+            display: flex;
+            gap: 1.562vw;
+        }
+    }
+    &_call {
+        display: flex;
+        gap: 0.729vw;
+        &_numbers {
+            display: flex;
+            flex-direction: column;
+            align-items: self-end;
+            gap: 0.364vw;
+        }
+        img {
+            padding: 0.312vw;
+            width: 2.812vw;
+            height: 2.812vw;
+            background: #faff00;
+            border-radius: 0.52vw;
+            &:hover {
+                filter: saturate(180%);
+            }
+        }
+        a {
+            color: #fff;
+        }
+    }
+    .button {
+        margin-top: 0.885vw;
+        width: 14.583vw;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: #faff00;
+    }
+}
