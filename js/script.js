@@ -4,6 +4,9 @@ $.get('header.html',function(response){
         $('.burger').toggleClass('flex');
     });
 });
+$.get('footer.html',function(response){ 
+    $('.footer').html(response);
+});
 
 if (document.querySelector('.reviews_sub_field') != null) {
     slider({

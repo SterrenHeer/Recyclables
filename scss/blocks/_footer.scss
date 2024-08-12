@@ -1,0 +1,138 @@
+.footer {
+    margin-top: 5.781vw;
+    padding: 2.447vw 0 1.145vw;
+    background: #000;
+    &_top {
+        display: flex;
+        justify-content: center;
+        gap: 1.666vw;
+        padding-bottom: 1.927vw;
+        border-bottom: 2px solid #62c711;
+        a {
+            height: 5.937vw;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    &_bottom {
+        margin-top: 1.458vw;
+        & > .title_16 {
+            margin-top: 4.114vw;
+            text-align: center;
+        }
+    }
+    &_logo img {
+        width: 9.218vw;
+        height: 14.062vw;
+    }
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_links, &_contacts, &_contact > div, &_right, &_target {
+        display: flex;
+        flex-direction: column;
+    }
+    &_links {
+        gap: 0.52vw;
+    }
+    &_contacts {
+        gap: 1.822vw;
+    }
+    &_contact {
+        display: flex;
+        align-items: self-start;
+        gap: 1.666vw;
+        & > div {
+            align-items: self-end;
+            gap: 0.364vw;
+        }
+        img {
+            width: 1.458vw;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    &_right {
+        align-items: self-end;
+    }
+    &_target {
+        align-items: self-end;
+        gap: 0.208vw;
+        margin-top: 2.968vw;
+        img {
+            width: 8.593vw;
+        }
+    }
+    .title {
+        color: #fff;
+    }
+    .button {
+        margin-top: 0.781vw;
+        padding: 0.416vw;
+        width: 13.645vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        margin-top: 15vw;
+        padding: 3.888vw;
+        &_top {
+            flex-direction: column;
+            gap: 2.222vw;
+            padding-bottom: 7.777vw;
+            a {
+                height: 16.666vw;
+            }
+        }
+        &_bottom {
+            margin-top: 6.388vw;
+            & > .title_16 {
+                margin-top: 9.722vw;
+            }
+        }
+        &_logo img {
+            width: 12.5vw;
+            height: 18.888vw;
+        }
+        &_wrapper {
+            flex-direction: column;
+            gap: 6.388vw;
+        }
+        &_links {
+            gap: 2.5vw;
+        }
+        &_contacts {
+            gap: 6.388vw;
+        }
+        &_contact {
+            gap: 5.277vw;
+            & > div {
+                gap: 0.833vw;
+            }
+            img {
+                width: 7.777vw;
+            }
+        }
+        &_right {
+            align-items: self-start;
+        }
+        &_target {
+            align-items: flex-start;
+            gap: 2.222vw;
+            margin-top: 11.388vw;
+            img {
+                width: 45.833vw;
+            }
+        }
+        .button {
+            margin-top: 5.277vw;
+            padding: 2.5vw;
+            width: 67.222vw;
+            font-size: 4.444vw;
+        }
+    }
+}
