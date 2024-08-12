@@ -1,0 +1,110 @@
+.phone_numbers {
+    padding-top: 10.468vw;
+    &_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.041vw;
+        margin-top: 2.708vw;
+        width: 71.666vw;
+        .title_30 {
+            font-size: 1.562vw;
+        }
+    }
+    &_header {
+        padding: 0.833vw 2.76vw;
+        background: #0e6e34;
+        color: #fff;
+    }
+    &_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.562vw 2.031vw;
+        border-radius: 1.041vw;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+        background: #ededed;
+        & > a {
+            display: flex;
+            align-items: center;
+            gap: 1.093vw;
+            img {
+                padding: 0.312vw;
+                width: 2.812vw;
+                height: 2.812vw;
+                background: #fff;
+                border-radius: 0.52vw;
+            }
+            &:hover {
+                img {
+                    border: 1px solid #0e6e34;
+                    transform: scale(1.05);
+                }
+                span {
+                    color: #0e6e34;
+                }
+            }
+        }
+    }
+    &_titles .title_24:last-child {
+        margin-top: 0.468vw;
+    }
+    & .container {
+        & > .title {
+            margin-left: auto;
+            width: 44.843vw;
+            text-align: end;
+        }
+        & > .title_24 {
+            margin-top: 0.885vw;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .phone_numbers {
+        padding-top: 15.277vw;
+        &_wrapper {
+            gap: 4.166vw;
+            margin-top: 6.111vw;
+            width: 100%;
+        }
+        &_header {
+            padding: 2.222vw 8.333vw;
+            text-align: center;
+        }
+        &_item {
+            flex-direction: column;
+            align-items: self-start;
+            gap: 2.777vw;
+            padding: 3.888vw 5.277vw;
+            border-radius: 5.555vw;
+            & > a {
+                gap: 4.166vw;
+                img {
+                    padding: 0.833vw;
+                    width: 7.5vw;
+                    height: 7.5vw;
+                    border-radius: 2.777vw;
+                }
+            }
+            .title {
+                font-size: 3.888vw;
+            }
+        }
+        &_titles .title_24:last-child {
+            margin-top: 1.111vw;
+        }
+        & .container {
+            & > .title {
+                width: 100%;
+            }
+            & > .title_24 {
+                margin-top: 3.611vw;
+            }
+        }
+        .title_30 {
+            padding: 2.222vw 1.111vw;
+            font-size: 3.888vw;
+        }
+    }
+}
