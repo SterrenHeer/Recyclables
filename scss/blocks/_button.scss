@@ -26,4 +26,12 @@
             background-color: rgba(#3a9f1e, 0.7);
         }
     }
+    &_linear {
+        padding: 1.562vw;
+        background: linear-gradient(121deg, #62c711 0%, #0e6e34 100%);
+        color: #fff;
+        &:hover {
+            background: linear-gradient(121deg, #0e6e34 0%, #62c711 100%);
+        }
+    }
 }

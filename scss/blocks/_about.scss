@@ -1,0 +1,127 @@
+.about_sub {
+    padding-top: 6.406vw;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_video {
+        width: 34.166vw;
+    }
+    &_image {
+        position: relative;
+        width: 100%;
+        height: 32.343vw;
+        margin-top: 4.583vw;
+        border-radius: 0.52vw;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.52vw;
+            transition: transform 0.8s, filter 0.8s;
+            &:hover {
+                filter: saturate(180%);
+            }
+        }
+    }
+    &_start {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 8.489vw;
+        height: 8.02vw;
+        border-radius: 0.52vw;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+        background: #0e6e34;
+        user-select: none;
+        cursor: pointer;
+        img {
+            width: 4.375vw;
+            height: 4.375vw;
+        }
+    }
+    &_content {
+        width: 49.166vw;
+        .title.regular {
+            margin-top: 1.302vw;
+        }
+        .button {
+            margin-top: 2.968vw;
+            width: 26.666vw;
+        }
+    }
+    &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.31vw;
+        margin-top: 1.875vw;
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 1.145vw;
+            img {
+                width: 1.354vw;
+                height: 1.354vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .about_sub {
+        padding-top: 8.888vw;
+        &_wrapper {
+            flex-wrap: wrap;
+        }
+        &_video {
+            width: 100%;
+        }
+        &_image {
+            width: 89%;
+            height: 75.833vw;
+            margin-top: 8.888vw;
+            border-radius: 2.777vw;
+            margin-left: auto;
+            img {
+                border-radius: 2.777vw;
+            }
+        }
+        &_start {
+            width: 19.722vw;
+            height: 18.611vw;
+            border-radius: 2.777vw;
+            img {
+                width: 10vw;
+                height: 10vw;
+            }
+        }
+        &_content {
+            margin-top: 4.444vw;
+            width: 100%;
+            .title.regular {
+                margin-top: 2.777vw;
+            }
+            .button {
+                margin-top: 6.944vw;
+                width: 100%;
+            }
+        }
+        &_list {
+            gap: 5.277vw;
+            margin-top: 3.333vw;
+            .title {
+                align-items: self-start;
+                gap: 2.777vw;
+                font-size: 3.888vw;
+                img {
+                    width: 5vw;
+                    height: 5vw;
+                }
+            }
+        }
+    }
+}
