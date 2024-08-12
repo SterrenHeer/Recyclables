@@ -1,0 +1,99 @@
+.feedback {
+    padding-top: 8.177vw;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.937vw;
+    }
+    &_form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.614vw;
+        margin-top: 0.885vw;
+        width: 43.99%;
+        &_input, textarea {
+            padding: 0.885vw 0.729vw;
+            width: calc(100% - 0.729vw - 0.729vw);
+            border: none;
+            border-radius: 0.26vw;
+            font-weight: 400;
+            font-size: 0.833vw;
+            color: #433652;
+            outline: none;
+            background: #d9d9d9;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 0.833vw;
+                color: #433652;
+            }
+        }
+        .doubles, .triple {
+            display: flex;
+            justify-content: space-between;
+        }
+        .doubles input {
+            width: calc(47.81% - 0.729vw - 0.729vw);
+        }
+        .triple input {
+            width: calc(30.46% - 0.729vw - 0.729vw);
+        }
+        .button {
+            width: 69.94%;
+        }
+        .title_16 {
+            margin: -0.677vw 0 -0.533vw;
+        }
+    }
+    &_image {
+        width: 51.56%;
+        height: 28.229vw;
+    }
+    .title_16.medium {
+        margin-top: 4.322vw;
+        a {
+            text-decoration: underline;
+            color: #000;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .feedback {
+        padding-top: 9.722vw;
+        &_wrapper {
+            flex-direction: column;
+            gap: 7.777vw;
+            margin-top: 4.444vw;
+        }
+        &_form {
+            gap: 1.111vw;
+            margin-top: 0;
+            width: 100%;
+            &_input, textarea {
+                padding: 2.5vw 1.666vw;
+                width: calc(100% - 1.666vw - 1.666vw);
+                border-radius: 1.388vw;
+                font-size: 2.777vw;
+                &::placeholder {
+                    font-size: 2.777vw;
+                }
+            }
+            .button {
+                width: 100%;
+            }
+            .title_16 {
+                margin: 1.944vw 0 3.055vw;
+            }
+        }
+        &_image {
+            width: 100%;
+            height: 57.5vw;
+        }
+        .title_16 {
+            font-size: 3.333vw;
+        }
+        .title_16.medium {
+            margin-top: 5.833vw;
+        }
+    }
+}
