@@ -20,4 +20,18 @@
 	.container {
 		width: 91.11%;
 	}
+	.hierarhy {
+		flex-direction: column;
+		gap: 4.166vw;
+		padding-top: 28.055vw;
+		&_links {
+			gap: 1.388vw;
+			.title {
+				font-size: 3.333vw;
+			}
+		}
+		.button {
+			width: 31.388vw;
+		}
+	}
 }
