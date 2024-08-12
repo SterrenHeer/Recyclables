@@ -1,0 +1,49 @@
+.clients {
+    padding-top: 6.437vw; 
+    &_wrapper {
+        overflow: hidden;
+        margin-top: 2.604vw;
+    }    
+    &_content {
+        display: flex;
+        gap: 5.208vw;
+        width: fit-content;
+        animation: scroll 20s linear infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }     
+    &_item {
+        height: 4.166vw;
+        img {
+            height: 100%;
+        }
+    }
+    @keyframes scroll {
+        0% { 
+            transform: translateX(0); 
+        }
+        100% { 
+            transform: translateX(-50%); 
+        }
+    }
+    .title_48 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .clients {
+        padding-top: 17.5vw; 
+        &_wrapper {
+            overflow: hidden;
+            margin-top: 6.944vw;
+        }    
+        &_content {
+            gap: 13.888vw;
+        }     
+        &_item {
+            height: 11.111vw;
+        }
+    }
+}
