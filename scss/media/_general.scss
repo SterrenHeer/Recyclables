@@ -34,4 +34,17 @@
 			width: 31.388vw;
 		}
 	}
+	.pagination {
+		gap: 2.777vw;
+		margin-top: 7.222vw;
+		&_item, &_next, &_prev {
+			width: 8.333vw;
+			height: 8.333vw;
+			border-radius: 1.666vw;
+			font-size: 3.888vw;
+		}
+		img {
+			height: 3.333vw;
+		}
+	}
 }

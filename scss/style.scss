@@ -31,6 +31,45 @@ a {
 		width: 5.885vw;
 	}
 }
+.pagination {
+	display: flex;
+	justify-content: center;
+	gap: 1.041vw;
+	margin-top: 3.125vw;
+	&_item, &_next, &_prev {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 3.229vw;
+		height: 3.229vw;
+		border: 1px solid #0e6e34;
+		border-radius: 0.312vw;
+		font-family: 'Inter', sans-serif;
+		font-weight: 800;
+		font-size: 0.937vw;
+		color: #015019;
+		cursor: pointer;
+		user-select: none;
+	}
+	img {
+		height: 0.625vw;
+	}
+	.active {
+		background: #0e6e34;
+		color: #fff;
+	}
+	&_next, &_prev {
+		border: 1px solid #bcbcbc;
+	}
+	.rotate {
+		img {
+			transform: rotate(180deg);
+		}
+	}
+	.lock img {
+		filter: brightness(0) saturate(100%) invert(70%) sepia(0%) saturate(446%) hue-rotate(180deg) brightness(111%) contrast(86%);
+	}
+}
 
 @import 'blocks/title';
 @import 'blocks/button';
