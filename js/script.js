@@ -10,10 +10,26 @@ $.get('header.html',function(response){
         modal('[data-modal]', 'data-close', '.consult');
         modal('[data-thanks]', 'data-close', '.thanks');
     }
+    $('input[name="phone"]').mask("+375 (99) 999-99-99");
 });
 $.get('footer.html',function(response){ 
     $('.footer').html(response);
 });
+
+$('input[name="phone"]').mask("+375 (99) 999-99-99");
+
+// let baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+// let newUrl = baseUrl + '?utm_source=yandex&utm_medium=cpc&utm_campaign=%7Bcampaign_name_lat%7D&utm_content=%7Bad_id%7D&utm_term=%7Bkeyword%7D';
+// history.pushState(null, null, newUrl);
+
+let utms_names = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+
+utms_names.forEach(name => {
+    let utm_inputs = document.querySelectorAll(`.${name}`);
+    utm_inputs.forEach(input => {
+        input.value = new URL(window.location.href).searchParams.get(`${name}`);
+    });
+});  
 
 if (document.querySelector('.reviews_sub_field') != null) {
     slider({
@@ -38,4 +54,36 @@ if (document.querySelector('.addresses_items') != null) {
 if (document.querySelector('.consult') != null) {
     modal('[data-modal]', 'data-close', '.consult');
     modal('[data-thanks]', 'data-close', '.thanks');
+}
+
+$("form").submit(function (event) {
+    event.preventDefault();
+    let name = event.target.classList.value.slice(0, -5);
+    let formData = new FormData(event.target);
+    for (var pair of formData.entries()) {
+        console.log(pair[0]+ ', ' + pair[1]); 
+    }
+    sendPhp(name, formData);
+});
+
+function sendPhp(name, data) {
+    $.ajax({
+        url: `./php/send_telegram.php`,
+        type: 'POST',
+        cache: false,
+        data: data,
+        dataType: 'html',
+        processData: false,
+        contentType: false,
+        success: function (data) {
+            $(`.${name}_form`).trigger('reset');
+            if (name == 'consult') {
+                closeModal(`.${name}`)
+            }
+            openModal('.thanks');
+            setTimeout(function(){
+                closeModal('.thanks');
+            },5000)
+        }
+    });
 }

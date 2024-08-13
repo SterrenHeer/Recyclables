@@ -68,6 +68,11 @@
             <div class="feedback_wrapper">
                 <form class="feedback_form">
                     <input type="hidden" name="theme" value="Обратная связь">
+                    <input type="hidden" name="utm_source" class="utm_source" value="">
+                    <input type="hidden" name="utm_medium" class="utm_medium" value="">
+                    <input type="hidden" name="utm_campaign" class="utm_campaign" value="">
+                    <input type="hidden" name="utm_content" class="utm_content" value="">
+                    <input type="hidden" name="utm_term" class="utm_term" value="">
                     <div class="triple">
                         <input type="text" name="surname" placeholder="Введите фамилию" class="feedback_form_input" required>
                         <input type="text" name="name" placeholder="Введите имя" class="feedback_form_input" required>
@@ -116,7 +121,7 @@
 				</div>
 				<div class="doubles">
 					<input type="text" name="weight" placeholder="Приблизительный вес" class="consult_form_input" required>
-					<input type="email" name="type" placeholder="Вид вторсырья" class="consult_form_input" required>
+					<input type="text" name="type" placeholder="Вид вторсырья" class="consult_form_input" required>
 				</div>
 				<label for="consult_form_checkbox" class="consult_form_label title title_16 regular">
 					<input type="checkbox" name="checkbox" id="consult_form_checkbox" class="consult_form_checkbox" required checked>

@@ -22,7 +22,7 @@
                 font-size: 1.25vw;
                 color: #949494;
             }
-            &:nth-child(3) {
+            &:nth-child(8) {
                 width: calc(25.625vw - 1.25vw - 1.25vw);
             }
         }
@@ -52,7 +52,7 @@
                 &::placeholder {
                     font-size: 4.444vw;
                 }
-                &:nth-child(3) {
+                &:nth-child(8) {
                     width: calc(100% - 3.888vw - 3.888vw);
                 }
             }
