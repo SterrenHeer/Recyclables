@@ -3,6 +3,9 @@ $.get('header.html',function(response){
     $('.burger_button, .burger_close, .burger a, .burger button').click(() => {
         $('.burger').toggleClass('flex');
     });
+    $(window).on( "resize", () => {
+        $('.burger').removeClass('flex');
+    });
 });
 $.get('footer.html',function(response){ 
     $('.footer').html(response);

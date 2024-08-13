@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Закупка макулатуры</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="scss/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<header class="header"></header>
+    <div class="hierarhy container">
+        <button class="button button_back" onclick="location='index.html'">Назад</button>
+        <div class="hierarhy_links">
+            <a href="index.html" class="title title_16 regular">Главная</a>
+            <div class="title title_16 regular">/</div>
+            <div class="title title_16">Услуги</div>
+            <div class="title title_16 regular">/</div>
+            <div class="title title_16">Закупка макулатуры</div>
+        </div>
+    </div>
+    <section class="all_prices">
+        <div class="container">
+            <div class="title title_64 green">Закупка макулатуры</div>
+            <div class="title title_24 regular">Продажа макулатуры в нашей компании – это выгодные предложения для партнеров.<br>Мы предлагаем сотрудничество производителям бумаги, упаковочных материалов и картона, а также компаниям, производящим строительные материалы.</div>
+            <div class="all_prices_paper">
+                <div class="title title_36">Цены на продажу макулатуры</div>
+                <div class="title title_24 regular hint">
+                    <img src="img/logo.png" alt="logo">
+                    *обращаем Ваше внимание, что указаны максимальные цены на прием вторсырья.<br>Цена может меняться в зависимости от его вида, типа упаковки, объема и способа вывоза.
+                </div>
+                <div class="table">
+                    <div class="table_header">
+                        <div class="title title_32 bold">ОПИСАНИЕ</div>
+                        <div class="title title_32 bold">ЦЕНА ,BYN/КГ</div>
+                    </div>
+                    <div class="table_items">
+                        <div class="table_item">
+                            <img src="img/paper/paper_template.png" alt="paper">
+                            <div class="table_titles">
+                                <div class="title title_20">МС-5Б/1</div>
+                                <div class="title title_20">Отходы производства гофрокартона</div>
+                            </div>
+                            <div class="title title_24 bold">4,9 BYN</div>
+                        </div>
+                        <div class="table_item">
+                            <img src="img/paper/paper_template.png" alt="paper">
+                            <div class="table_titles">
+                                <div class="title title_20">МС-5Б/1</div>
+                                <div class="title title_20">Отходы производства гофрокартона</div>
+                            </div>
+                            <div class="title title_24 bold">4,9 BYN</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="algorithms">
+                    <div class="title title_36 green">Схема работы</div>
+                    <div class="algorithms_items">
+                        <div class="algorithms_item">
+                            <img src="img/paper/algorithm_1.png" alt="algorithm">
+                            <div class="title title_20 green">Звонок</div>
+                            <ul>
+                                <li class="title title_15">Обработка заказа</li>
+                                <li class="title title_15">Уточнение типа макулатуры</li>
+                                <li class="title title_15">Уточнение объёма работы</li>
+                            </ul>
+                        </div>
+                        <div class="algorithms_item">
+                            <img src="img/paper/algorithm_2.png" alt="algorithm">
+                            <div class="title title_20 green">Оформление заказа</div>
+                            <ul>
+                                <li class="title title_15">Уточнение места вывоза</li>
+                                <li class="title title_15">Назначение удобного времени<br>(круглосуточно)</li>
+                            </ul>
+                        </div>
+                        <div class="algorithms_item">
+                            <img src="img/paper/algorithm_3.png" alt="algorithm">
+                            <div class="title title_20 green">Вывоз</div>
+                            <ul>
+                                <li class="title title_15">Вывоз осуществляется от 900 кг</li>
+                                <li class="title title_15">Бесплатная погрузка<br>(собственные грузчики)</li>
+                            </ul>
+                        </div>
+                        <div class="algorithms_item">
+                            <img src="img/paper/algorithm_4.png" alt="algorithm">
+                            <div class="title title_20 green">Удобный расчет</div>
+                            <ul>
+                                <li class="title title_15">Оплата наличными</li>
+                                <li class="title title_15">Перевод на карту<br>(оплата после взвешивания)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="application">
+		<div class="container">
+			<div class="title title_40">Оставьте заявку на вывоз вторичного сырья</div>
+			<div class="title title_24 regular">Оставьте свои контакты,<br class="br"> мы перезвоним, чтобы уточнить детали </div>
+			<form class="application_form">
+				<input type="hidden" name="theme" value="Заявка на вывоз">
+				<input type="text" name="name" placeholder="Введите имя" class="application_form_input" required>
+				<input type="text" name="phone" placeholder="+375 ()" class="application_form_input" required>
+				<button class="button button_green" id="areas">Отправить</button>
+			</form>
+		</div>
+	</section>
+	<footer class="footer nomt"></footer>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/slider.js"></script>
+    <script src="js/tabs.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

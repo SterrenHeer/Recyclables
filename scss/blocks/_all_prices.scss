@@ -47,8 +47,108 @@
             }
         }
     }
+    &_paper {
+        margin-top: 3.906vw;
+        & > .title_36 {
+            text-align: center;
+        }
+    }
     & .container > .title_24 {
         margin-top: 0.885vw;
+    }
+    .hint {
+        display: flex;
+        align-items: center;
+        gap: 2.708vw;
+        margin: 2.031vw auto 0;
+        padding: 0.416vw 4.166vw;
+        width: 71.666vw;
+        background: #f0fae7;
+        img {
+            width: 3.645vw;
+            height: 5.52vw;
+        }
+    }
+    .table {
+        margin-top: 2.031vw;
+        &_header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.458vw 3.593vw;
+            background: #0e6e34;
+            .title {
+                color: #fff;
+            }
+        }
+        &_items {
+            display: flex;
+            flex-direction: column;
+        }
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                width: 16.406vw;
+                height: 10.937vw;
+            }
+            .title_24 {
+                width: 19.218vw;
+                text-align: center;
+            }
+        }
+        &_titles {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 3.854vw;
+            .title {
+                &:first-child {
+                    width: 14.843vw;
+                }
+                &:last-child {
+                    width: 31.354vw;
+                }
+            }
+        }
+    }
+    .algorithms {
+        margin-top: 8.75vw;
+        &_items {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2.291vw;
+        }
+        &_item {
+            position: relative;
+            padding: 0.416vw 1.406vw;
+            width: calc(20.833vw - 1.406vw - 1.406vw);
+            border-radius: 0.52vw;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+            background: #fff;
+            &:last-child img {
+                width: 8.437vw;
+            }
+            img {
+                position: absolute;
+                top: 0.416vw;
+                right: 0;
+                width: 11.979vw;
+            }
+            ul, li, .title_20 {
+                position: relative;
+                z-index: 1;
+            }
+            ul {
+                margin-top: 0.781vw;
+            }
+            li {
+                margin-left: 0.945vw;
+            }
+            .title_20 {
+                margin-top: 5.937vw;
+            }
+        }
     }
 }
 
