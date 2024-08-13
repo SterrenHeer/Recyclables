@@ -1,4 +1,5 @@
 .application {
+    margin-top: 5.677vw;
     padding: 4.322vw 0 2.916vw;
     background: linear-gradient(90deg, #e5faeb 0%, #ebf0e9 45%, #ece7de 55%, #ebf3eb 71.5%, #e4e0f1 98.5%);
     &_form {
@@ -36,6 +37,7 @@
 
 @media (max-width: 992px) {
     .application {
+        margin-top: 12.777vw;
         padding: 14.444vw 0 13.055vw;
         &_form {
             display: flex;
