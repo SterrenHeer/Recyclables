@@ -79,6 +79,38 @@
                 color: rgba(0, 0, 0, 0.6);
             }
         }
+        &_select { 
+            display: block; 
+            padding: 1.041vw 1.51vw;
+            width: 48.51%;
+            border: none;
+            font-size: 1.041vw; 
+            font-weight: 400; 
+            color: rgba(0, 0, 0, 0.6);
+            
+            box-sizing: border-box; 
+            margin: 0; 
+            
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: #d9d9d9; 
+            background-image: url('../icons/select.svg'); 
+            background-repeat: no-repeat;
+            background-position: right 1.041vw top 50%;
+            background-size: 1.041vw; 
+            &::-ms-expand { 
+                display: none; 
+            } 
+            &:hover { 
+                border-color: #888; 
+            } 
+            &:focus { 
+                border-color: #aaa;  
+                color: #222;
+                outline: none; 
+            } 
+        }
         &_checkbox {
             position: absolute;
             z-index: -1;

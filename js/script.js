@@ -60,9 +60,6 @@ $("form").submit(function (event) {
     event.preventDefault();
     let name = event.target.classList.value.slice(0, -5);
     let formData = new FormData(event.target);
-    for (var pair of formData.entries()) {
-        console.log(pair[0]+ ', ' + pair[1]); 
-    }
     sendPhp(name, formData);
 });
 

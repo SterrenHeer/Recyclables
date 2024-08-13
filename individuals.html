@@ -201,7 +201,14 @@
 				</div>
 				<div class="doubles">
 					<input type="text" name="weight" placeholder="Приблизительный вес" class="consult_form_input" required>
-					<input type="text" name="type" placeholder="Вид вторсырья" class="consult_form_input" required>
+					<select name="type" class="consult_form_select" required> 
+						<option value="">Вид вторсырья</option>
+						<option>Макулатура</option> 
+						<option>Плёнка</option> 
+						<option>Металл</option> 
+						<option>Бытовая техника</option> 
+						<option>Стеклобой</option>
+					</select>
 				</div>
 				<label for="consult_form_checkbox" class="consult_form_label title title_16 regular">
 					<input type="checkbox" name="checkbox" id="consult_form_checkbox" class="consult_form_checkbox" required checked>
