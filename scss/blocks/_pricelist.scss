@@ -1,0 +1,54 @@
+.pricelist {
+    position: relative;
+    margin-top: 4.479vw;
+    min-height: 13.281vw;
+    background: url('../img/pricelist_bg.png') no-repeat 50%/cover;
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 31.354vw;
+        height: 20.312vw;
+    }
+    .title {
+        color: #fff;
+    }
+    .title_24 {
+        margin-top: 0.989vw;
+    }
+    .title_40 {
+        padding-top: 1.354vw;
+    }
+    .button {
+        margin-top: 1.458vw;
+        width: 17.343vw;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (max-width: 992px) {
+    .pricelist {
+        margin-top: 16.388vw;
+        min-height: 87.777vw;
+        background: url('../img/pricelist_bg_m.png') no-repeat 50%/cover;
+        img {
+            top: 50.722vw;
+            width: 84.166vw;
+            height: 54.444vw;
+        }
+        .title_24 {
+            margin-top: 3.611vw;
+        }
+        .title_40 {
+            padding-top: 5vw;
+            font-size: 6.666vw;
+        }
+        .button {
+            position: relative;
+            z-index: 1;
+            padding: 4.3vw;
+            margin-top: 3.611vw;
+            width: 100%;
+        }
+    }
+}
