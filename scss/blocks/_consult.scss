@@ -87,10 +87,8 @@
             font-size: 1.041vw; 
             font-weight: 400; 
             color: rgba(0, 0, 0, 0.6);
-            
             box-sizing: border-box; 
             margin: 0; 
-            
             -moz-appearance: none;
             -webkit-appearance: none;
             appearance: none;
@@ -199,4 +197,84 @@
         display: none;
         opacity: 0;
     }
+}
+
+@media (max-width: 992px) {
+    .consult, .thanks {
+        &_modal {
+            padding: 8.055vw 0;
+            width: 100%;
+            max-height: calc(95vh - 8.055vw - 8.055vw);
+        }
+        &_close {
+            top: 2.777vw;
+            right: 2.777vw;
+            width: 5.833vw;
+        }
+        &_image {
+            display: none;
+        }
+        &_divider {
+            gap: 3.055vw;
+            margin-top: 6.111vw;
+            height: 14.166vw;
+            img {
+                width: 9.166vw;
+                height: 9.166vw;
+            }
+        }
+        &_form, .title_64 {
+            padding: 0 5.555vw;
+        }
+        &_form {
+            gap: 2.777vw;
+            margin-top: 6.111vw;
+            width: calc(100% - 5.555vw - 5.555vw);
+            &_input {
+                padding: 3.888vw 5.277vw;
+                font-size: 4.444vw;
+                &::placeholder {
+                    font-size: 4.444vw;
+                }
+            }
+            &_select { 
+                padding: 3.888vw 5.277vw;
+                width: 100%;
+                border: none;
+                font-size: 4.444vw;
+                background-position: right 3.611vw top 50%;
+                background-size: 5vw; 
+            }
+            &_label {
+                gap: 3.055vw;
+            }
+            &_view {
+                width: 5.833vw;
+                height: 5.833vw;
+                border-radius: 0.833vw;
+            }
+            &_icon {
+                width: 2.777vw;
+            }
+            .doubles, .triple {
+                flex-direction: column;
+                gap: 2.777vw;
+            }
+            .doubles input {
+                width: calc(100% - 5.277vw - 5.277vw);
+            }
+            .triple input {
+                width: calc(100% - 5.277vw - 5.277vw);
+            }
+            .button {
+                width: 100%;
+            }
+        }
+    }
+    .thanks {
+        &_modal {
+            gap: 6.944vw;
+            padding: 8.055vw;
+        }
+    } 
 }
