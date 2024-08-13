@@ -23,3 +23,7 @@ if (document.querySelector('.reviews_sub_field') != null) {
         swipe: true,
     });
 }
+
+if (document.querySelector('.addresses_items') != null) {
+    tabs('.addresses_header', '.addresses_items', '.addresses_headers', 'active');
+}
