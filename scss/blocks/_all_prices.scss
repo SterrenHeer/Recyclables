@@ -180,8 +180,99 @@
         &_image {
             height: 48.333vw;
         }
+        &_paper {
+            margin-top: 4.166vw;
+            & > .title_36 {
+                font-size: 5.555vw;
+            }
+        }
         & .container > .title_24 {
             margin-top: 2.777vw;
+        }
+        .hint {
+            flex-direction: column;
+            align-items: self-start;
+            gap: 2.777vw;
+            margin: 5.555vw auto 0;
+            padding: 3.611vw 3.055vw;
+            width: calc(100% - 3.055vw - 3.055vw);
+            font-size: 3.888vw;
+            img {
+                width: 10.833vw;
+                height: 16.388vw;
+            }
+        }
+        .table {
+            margin-top: 5.555vw;
+            &_header {
+                padding: 5vw 3.055vw;
+                .title {
+                    font-size: 3.888vw;
+                }
+            }
+            &_items {
+                gap: 2.777vw;
+            }
+            &_item {
+                flex-wrap: wrap;
+                gap: 4.444vw 0;
+                img {
+                    width: 32.777vw;
+                    height: 21.666vw;
+                }
+                .title_24 {
+                    width: 31.944vw;
+                    font-size: 5.555vw;
+                }
+            }
+            &_titles {
+                order: 1;
+                flex-direction: column;
+                gap: 1.666vw;
+                padding-left: 0;
+                .title {
+                    font-size: 3.888vw;
+                    &:first-child, &:last-child {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .algorithms {
+            margin-top: 12.777vw;
+            &_items {
+                flex-wrap: wrap;
+                gap: 3.055vw;
+                margin-top: 7.222vw;
+            }
+            &_item {
+                padding: 0.833vw 3.333vw;
+                width: calc(43.888vw - 3.333vw - 3.333vw);
+                border-radius: 2.777vw;
+                &:last-child img {
+                    width: 19.722vw;
+                }
+                img {
+                    top: 3.333vw;
+                    width: 25.277vw;
+                }
+                ul {
+                    margin-top: 3.333vw;
+                }
+                li {
+                    margin-left: 3.944vw;
+                }
+                .title_20 {
+                    margin-top: 16.388vw;
+                    font-size: 3.888vw;
+                }
+            }
+            & > .title_36 {
+                font-size: 6.666vw;
+            }
+        }
+        .title_64 {
+            font-size: 8.888vw;
         }
     }
 }
