@@ -66,10 +66,56 @@
             </div>
         </div>
     </section>
+    <div class="consult">
+		<div class="consult_modal">
+			<img class="consult_close" data-close src="icons/close_modal.svg" alt="close">
+			<div class="title title_64 green">Заполните заявку</div>
+			<div class="consult_divider">
+				<img src="icons/recycling.svg" alt="recycling">
+				<div class="title title_36">Сохраним природу вместе!</div>
+				<img src="icons/recycling.svg" alt="recycling">
+			</div>
+			<form class="consult_form" action="#">
+				<input type="hidden" name="theme" value="Заявка">
+                <input type="hidden" name="utm_source" class="utm_source" value="">
+                <input type="hidden" name="utm_medium" class="utm_medium" value="">
+                <input type="hidden" name="utm_campaign" class="utm_campaign" value="">
+                <input type="hidden" name="utm_content" class="utm_content" value="">
+                <input type="hidden" name="utm_term" class="utm_term" value="">
+				<div class="triple">
+					<input type="text" name="name" placeholder="Введите имя" class="consult_form_input" required>
+					<input type="text" name="phone" placeholder="Введите телефон" class="consult_form_input" required>
+					<input type="text" name="address" placeholder="Введите адрес" class="consult_form_input" required>
+				</div>
+				<div class="doubles">
+					<input type="text" name="weight" placeholder="Приблизительный вес" class="consult_form_input" required>
+					<input type="email" name="type" placeholder="Вид вторсырья" class="consult_form_input" required>
+				</div>
+				<label for="consult_form_checkbox" class="consult_form_label title title_16 regular">
+					<input type="checkbox" name="checkbox" id="consult_form_checkbox" class="consult_form_checkbox" required checked>
+					<span class="consult_form_view">
+						<img class="consult_form_icon" src="icons/policy.svg" alt="box">
+					</span>
+					<div>Вы соглашаетесь с условиями обработки персональных данных</div>
+				</label>
+				<button type="submit" class="button button_modal">Отправить</button>
+			</form>
+			<img class="consult_image" src="img/modal_bg.png" alt="bg">
+		</div>
+	</div>
+	<div class="thanks">
+		<div class="thanks_modal">
+			<img class="thanks_close" data-close src="icons/close_modal.svg" alt="close">
+			<div class="title title_64 green">Спасибо!</div>
+			<div class="title title_40">Мы свяжемся с вами в ближайшее время и предоставим необходимую информацию</div>
+			<img class="thanks_image" src="img/modal_bg.png" alt="bg">
+		</div>
+	</div>
 	<footer class="footer"></footer>
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

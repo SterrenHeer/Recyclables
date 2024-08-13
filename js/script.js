@@ -6,6 +6,10 @@ $.get('header.html',function(response){
     $(window).on( "resize", () => {
         $('.burger').removeClass('flex');
     });
+    if (document.querySelector('.consult') != null) {
+        modal('[data-modal]', 'data-close', '.consult');
+        modal('[data-thanks]', 'data-close', '.thanks');
+    }
 });
 $.get('footer.html',function(response){ 
     $('.footer').html(response);
@@ -29,4 +33,9 @@ if (document.querySelector('.reviews_sub_field') != null) {
 
 if (document.querySelector('.addresses_items') != null) {
     tabs('.addresses_header', '.addresses_items', '.addresses_headers', 'active');
+}
+
+if (document.querySelector('.consult') != null) {
+    modal('[data-modal]', 'data-close', '.consult');
+    modal('[data-thanks]', 'data-close', '.thanks');
 }
