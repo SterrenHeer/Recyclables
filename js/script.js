@@ -51,6 +51,11 @@ utms_names.forEach(name => {
         input.value = new URL(window.location.href).searchParams.get(`${name}`);
     });
 });  
+$( ".addresses_item" ).on( "click", function() {
+    let link = `https://yandex.ru/map-widget/v1/?ll=${$( this ).attr('data-1')}%2C${$( this ).attr('data-2')}&z=12`
+    document.querySelector('.addresses_map').setAttribute('src', link)
+});
+
 
 if (document.querySelector('.reviews_sub_field') != null) {
     slider({

@@ -55,6 +55,10 @@
         padding: 1.333vw 1.666vw;
         width: calc(16.927vw - 1.666vw - 1.666vw);
         background: #f3f5f7;
+        cursor: pointer;
+        &:hover {
+            background: #e0e1e2;
+        }
         img {
             width: 1.666vw;
         }
