@@ -77,13 +77,58 @@
             color: #fff;
         }
     }
-    .button {
-        margin-top: 0.885vw;
-        width: 14.583vw;
-    }
     a:hover {
         text-decoration: underline;
         color: #faff00;
+    }
+    &_dropdown {
+        position: relative;
+        user-select: none;
+        & > label {
+            display: flex;
+            align-items: center;
+            gap: 0.26vw;
+        }
+        & > div {
+            position: absolute;
+            top: 2.5vw;
+            display: flex;
+            flex-direction: column;
+            gap: 0.52vw;
+            padding: 1.041vw;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+            background: #fff;
+            font-size: 0.9375vw;
+            font-weight: 400;
+        }
+        & :checked ~ div {
+            display: flex;
+        }
+        & :checked ~ label span {
+            transform: rotate(-180deg);
+        }
+        a {
+            text-wrap: nowrap;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+        }
+        span {
+            transition: all 0.8s;
+        }
+        input, & > div {
+            display: none;
+        }
+        label {
+            cursor: pointer;
+        }
+        a:hover {
+            color: #0e6e34;
+        }
+    }
+    .button {
+        margin-top: 0.885vw;
+        width: 14.583vw;
     }
 }
 .burger {

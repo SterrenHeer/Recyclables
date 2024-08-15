@@ -6,6 +6,23 @@ $.get('header.html',function(response){
     $(window).on( "resize", () => {
         $('.burger').removeClass('flex');
     });
+    $(window).on( "resize scroll", () => {
+        $('.header_dropdown :checked').prop('checked', false);
+    });
+    $('.header_dropdown a').click(() => {
+        $('.header_dropdown :checked').prop('checked', false);
+    });
+    document.addEventListener('click', outsideClickListener)
+    function outsideClickListener ({ target }) {
+        let dropdowns = []
+        document.querySelectorAll('.header_dropdown').forEach((element) => {
+            dropdowns.push(element)
+        })
+        let contains = dropdowns.some((element) => element.contains(target))
+        if (!contains) {
+            $('.header_dropdown :checked').prop('checked', false);
+        } 
+    }
     if (document.querySelector('.consult') != null) {
         modal('[data-modal]', 'data-close', '.consult');
         modal('[data-thanks]', 'data-close', '.thanks');
@@ -14,6 +31,10 @@ $.get('header.html',function(response){
 });
 $.get('footer.html',function(response){ 
     $('.footer').html(response);
+    if (document.querySelector('.consult') != null) {
+        modal('[data-modal]', 'data-close', '.consult');
+        modal('[data-thanks]', 'data-close', '.thanks');
+    }
 });
 
 $('input[name="phone"]').mask("+375 (99) 999-99-99");
