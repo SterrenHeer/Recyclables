@@ -93,6 +93,8 @@
         &_items {
             display: flex;
             flex-direction: column;
+            gap: 0.104vw;
+            margin-top: 0.104vw;
         }
         &_item {
             display: flex;
@@ -237,6 +239,7 @@
             }
             &_items {
                 gap: 2.777vw;
+                margin-top: 0.555vw;
             }
             &_item {
                 flex-wrap: wrap;

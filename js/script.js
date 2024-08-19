@@ -52,8 +52,10 @@ utms_names.forEach(name => {
     });
 });  
 $( ".addresses_item" ).on( "click", function() {
-    let link = `https://yandex.ru/map-widget/v1/?ll=${$( this ).attr('data-1')}%2C${$( this ).attr('data-2')}&z=12`
-    document.querySelector('.addresses_map').setAttribute('src', link)
+    if ($( this ).attr('data-1') != null) {
+        let link = `https://yandex.ru/map-widget/v1/?ll=${$( this ).attr('data-1')}%2C${$( this ).attr('data-2')}&z=18&l=map&pt=${$( this ).attr('data-1')},${$( this ).attr('data-2')}`
+        document.querySelector('.addresses_map').setAttribute('src', link)
+    }
 });
 
 
