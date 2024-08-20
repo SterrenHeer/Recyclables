@@ -26,6 +26,7 @@
         & > a {
             display: flex;
             align-items: center;
+            flex-shrink: 0;
             gap: 1.093vw;
             img {
                 padding: 0.312vw;
