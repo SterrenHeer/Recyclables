@@ -1,17 +1,11 @@
 .vacancies {
     padding-top: 1.51vw;
-    &_header {
-        margin-top: 3.437vw;
-        padding: 0.833vw 2.76vw;
-        background: #0e6e34;
-        color: #fff;
-    }
     &_wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 1.041vw;
-        margin-top: 1.041vw;
+        margin-top: 2.437vw;
     }
     &_item {
         padding: 1.562vw 2.76vw;
@@ -44,14 +38,9 @@
 @media (max-width: 992px) {
     .vacancies {
         padding-top: 1.388vw;
-        &_header {
-            margin-top: 6.111vw;
-            padding: 4.444vw 0;
-            text-align: center;
-        }
         &_wrapper {
             gap: 3.333vw;
-            margin-top: 3.333vw;
+            margin-top: 6.111vw;
         }
         &_item {
             padding: 1.666vw 4.722vw;
