@@ -1,7 +1,23 @@
 <?php
 
-$token = "7243538546:AAGpadMB8B0_mSnr4tqpXVuOc4ggBsM-PC0";
-$chat_id = "-4226805402";
+require_once('../phpmailer/PHPMailerAutoload.php');
+$mail = new PHPMailer;
+$mail->CharSet = 'utf-8';
+
+$mail->isSMTP();
+$mail->Host = 'smtp.mail.ru';
+$mail->SMTPAuth = true;
+$mail->Username = 'ggkp.11@mail.ru';
+$mail->Password = 'evUWkq33SMdbb6eAb7qt';
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465;
+
+$mail->setFrom('ggkp.11@mail.ru');
+$mail->addAddress('sterrenheer@gmail.com');
+$mail->isHTML(true);
+
+// $token = "7243538546:AAGpadMB8B0_mSnr4tqpXVuOc4ggBsM-PC0";
+// $chat_id = "-4226805402";
 
 $theme = ($_POST['theme']);
 $name = ($_POST['name']);
@@ -55,9 +71,15 @@ if(isset($utm_term) && $utm_term !== '')
     $arr['utm_term:'] = $utm_term;
 
 foreach($arr as $key => $value) {
-    $txt .= "<b>".$key."</b> ".$value."%0A";
+    $txt .= "<b>".$key."</b> ".$value."<br>";
 };
 
-$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+$mail->Subject = $theme;
+$mail->Body = $txt;
+                  
+$mail->AltBody = '';
 
+// $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+
+$mail->send()
 ?>
