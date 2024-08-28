@@ -75,6 +75,17 @@ if (document.querySelector('.reviews_sub_field') != null) {
     });
 }
 
+if (document.querySelector('.promo_field') != null) {
+    slider({
+        containerSelector: '.promo',
+        slideSelector: '.promo_slide',
+        wrapperSelector: '.promo_wrapper',
+        fieldSelector: '.promo_field',
+        duration: 4000,
+        swipe: true,
+    });
+}
+
 if (document.querySelector('.addresses_items') != null) {
     tabs('.addresses_header', '.addresses_items', '.addresses_headers', 'active');
 }
